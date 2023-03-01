@@ -1,0 +1,64 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(#094D1C, #008C4A);
+
+}
+
+#s-trace {
+
+    left: 10px;
+
+}
+
+.horizontal-trace {
+
+    border-bottom: 10px solid silver;
+    width: 100px;
+    height: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.vertical-trace {
+
+    border-left: 10px solid silver;
+    height: 75px;
+    position: absolute;
+    left: 18px;
+    top: 36px;
+
+}
+
+.diagonal-trace {
+
+    
+    border-bottom: 10px solid silver;
+    width: 20%;
+    transform: rotate(-45deg);
+    transform-origin: left;
+
+}
+
+.via-outer {
+
+   background: silver;
+   border-radius: 50%;
+   height: 30px;
+   width: 30px;
+   position: relative;
+   align-items: center;
+
+  }
+
+  .via-inner {
+
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    top: 50%;
+    left: 50%;
+    margin: -11px 0px 0px -11px;
+
+  }
