@@ -5,14 +5,19 @@
     <head>
         <title> yzjnx </title>
         <link rel ="stylesheet" type ="text/css" href="{% static 'portfolio/css/style.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        
+        <script src="{% static 'portfolio/js/turnpot.js' %}"></script> 
+
     </head>
     <body>
 
         <div id="s-trace" class="container">
-            <img src="{% static 'portfolio/PCB.svg' %}" alt="none">
-            <div id = "top-right-trace"><img src="{% static 'portfolio/BackgroundTrace.svg' %}" class="tr-bg-trace"></svg></div>
-            <div id = "led-home"><img src="{% static 'portfolio/LEDOFF.svg' %}" class="tr-bg-trace"></div>
-            <div id = "pot"><img src="{% static 'portfolio/potentiometer/Group 72(1).svg' %}"></div>
+            <img src="{% static 'portfolio/PCB.svg' %}" draggable="false">
+            <div id = "top-right-trace"><img src="{% static 'portfolio/BackgroundTrace.svg' %}" draggable="false"></div>
+            <div id = "led-home"><img src="{% static 'portfolio/LEDOFF.svg' %}" draggable="false"></div>
+            <div id = "pot"><img id = "pot-img" src="{% static 'portfolio/potentiometer/Group 72(1).svg' %}" draggable="false"></div>
+            <div id = "pot"><img id = "pot-img" src="{% static 'portfolio/potentiometer/Group 72(2).svg' %}" style="display: none;"></div>
         </div>
         
     
