@@ -4,7 +4,7 @@ body {
 
 }
 
-#s-trace {
+#home-opening {
 
     left: 10px;
 
@@ -29,41 +29,8 @@ body {
 
 }
 
-.diagonal-trace {
 
-    
-    border-bottom: 10px solid silver;
-    width: 20%;
-    transform: rotate(-45deg);
-    transform-origin: left;
-
-}
-
-.via-outer {
-
-   background: silver;
-   border-radius: 50%;
-   height: 30px;
-   width: 30px;
-   position: relative;
-   align-items: center;
-
-  }
-
-  .via-inner {
-
-    position: absolute;
-    background: black;
-    border-radius: 50%;
-    height: 22px;
-    width: 22px;
-    top: 50%;
-    left: 50%;
-    margin: -11px 0px 0px -11px;
-
-  }
-
-  .container {
+.container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -82,7 +49,8 @@ body {
 
     position: absolute;
     bottom: 0;
-    left: 150px;
+    left: 0px;
+    transform: rotateX(180deg);
 
 }
 
@@ -94,10 +62,53 @@ body {
 
 }
 
-#pot {
+#button {
 
     position: absolute;
     bottom: 200px;
-    right: 150px;
+    right: 150px; 
+    
+}
+
+#no-push-txt {
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    position: absolute;
+    width: 224px !important;
+    right: -64px !important;
+
+}
+
+h1 {
+
+    font-family: 'Roboto', sans-serif; 
+    color: white !important;
+
+}
+
+h2 {
+
+    font-family: 'Roboto', sans-serif; 
+    color: white !important;
+
+}
+
+.font-large{
+
+    font-size: 90px;
+
+}
+
+.hidden { 
+
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+.show {
+
+    opacity: 1;
 
 }

@@ -1,22 +1,54 @@
+{% include 'portfolio/navbar.html' %}
 {% load static %}
+
 
 <!DOCTYPE html>
 <html>
     <head>
         <title> yzjnx </title>
+        
         <link rel ="stylesheet" type ="text/css" href="{% static 'portfolio/css/style.css' %}">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         
-        <script src="{% static 'portfolio/js/turnpot.js' %}"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
+        <script src="{% static 'portfolio/js/turnpot.js' %}"></script>
+        <script src="{% static 'portfolio/js/bigredbutton.js' %}"></script>
+        <script src="{% static 'portfolio/js/open-home-transition.js' %}"></script>  
+        
     </head>
     <body>
 
-        <div id="s-trace" class="container">
-            <img src="{% static 'portfolio/PCB.svg' %}" draggable="false">
-            <div id = "top-right-trace"><img src="{% static 'portfolio/BackgroundTrace.svg' %}" draggable="false"></div>
-            <div id = "led-home"><img src="{% static 'portfolio/LEDOFF.svg' %}" draggable="false"></div>
-            <div id = "pot"><img id = "pot-img" src="{% static 'portfolio/potentiometer/Group 72(1).svg' %}" draggable="false"></div>
+        {% block content %}
+        {% endblock %}
+
+        <div id="home-opening" class="container">
+            <div id="home" class="container" style="display: none;">
+                <section class="hidden">
+                    <h1 class = "font-large">Electrical Engineering Student</h1>
+                    <h2>Is a leaf's purpose only to fall?    </h2>
+                </section>
+
+            </div>
+            <img id = "PCB" src="{% static 'portfolio/PCB.svg' %}" draggable="false">
+            <img id = "MCU" src="{% static 'portfolio/MCU.svg' %}" draggable="false">
+            <div id = "non-important-open">
+                <div id = "top-right-trace"><img src="{% static 'portfolio/BackgroundTrace.svg' %}" draggable="false"></div>
+                <div id = "led-home"><img src="{% static 'portfolio/BackgroundTrace.svg' %}" draggable="false"></div>
+                <div id = "button">
+                    <img id = "button-off" src="{% static 'portfolio/ButtonOFF.svg' %}" draggable="false">
+                    <h1 id ="no-push-txt" style="font-family: 'Roboto', sans-serif; color: white;">Do Not Push</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="home" class="container" style="display: none;">
+
+            <h1>Electrical Engineering Student</h1>
 
         </div>
         
