@@ -34,12 +34,32 @@
     let navbar = document.getElementById("nav");
     let home_container = document.getElementById("home");
 
+    
+
     $("#button").click(function() { 
 
-        //open_container.style.display = "none";
-        //PCB.style.display = "none";
-        open_container.remove()
-        PCB.remove()
+        PCB.style.position = "absolute";
+        PCB.style.bottom = "496px";
+
+        $(".fly-away").animate({
+
+            top: '-450px',
+            
+        }, 1000, function() {
+
+       
+            PCB.remove();
+            
+            home_container.style.display = "";
+
+            $("#nav").fadeIn();
+            
+            
+
+        });
+
+        open_container.remove();
+
         micro_controller.style.position = "absolute";
         micro_controller.style.bottom = "88px";
         
@@ -48,11 +68,11 @@
             top: '-53px',
             height: '210px',
             width: '210px',
+            left: '850px'
             
         }, 1000, )
         
-        navbar.style.display = "";
-        home_container.style.display = "";
+        
         
 
 

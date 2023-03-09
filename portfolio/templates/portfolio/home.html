@@ -26,18 +26,110 @@
         {% block content %}
         {% endblock %}
 
-        <div id="home-opening" class="container">
-            <div id="home" class="container" style="display: none;">
+        <div id="home-opening" class="containerx">
+            <div id="home" class="containerx" style="display: none;">
                 <section class="hidden">
                     <a id = "home"></a>
                     <h1 class = "font-large">Electrical Engineering Student</h1>
                     <h2>Is a leaf's purpose only to fall?    </h2>
                 </section>
 
+                <section class="hidden">
+                    <h1>Hardware Projects</h1>
+                    <div class="logos">
+                        <div class="logo hidden">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="logo hidden">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="logo hidden">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="logo hidden">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                <section class="hidden">
+                    <h1>Software Projects</h1>
+                    <div class="logos">
+                        <div class="logo hidden">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="logo hidden">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="logo hidden">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="logo hidden">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+                </section>
             </div>
-            <img id = "PCB" src="{% static 'portfolio/PCB.svg' %}" draggable="false">
+            <img id = "PCB" class = "fly-away" src="{% static 'portfolio/PCB.svg' %}" draggable="false">
             <img id = "MCU" src="{% static 'portfolio/MCU.svg' %}" draggable="false">
-            <div id = "non-important-open">
+            <div id = "non-important-open" class="fly-away">
                 <div id = "top-right-trace"><img src="{% static 'portfolio/BackgroundTrace.svg' %}" draggable="false"></div>
                 <div id = "led-home"><img src="{% static 'portfolio/BackgroundTrace.svg' %}" draggable="false"></div>
                 <div id = "button">
@@ -46,13 +138,6 @@
                 </div>
             </div>
         </div>
-
-        <div id="home" class="container" style="display: none;">
-
-            <h1>Electrical Engineering Student</h1>
-
-        </div>
-        
     
     </body>
 </html>
