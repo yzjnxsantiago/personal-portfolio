@@ -244,7 +244,7 @@
 </g>
 <circle cx="865.5" cy="77.5" r="13.5" fill="black"/>
 <g filter="url(#filter50_i_21_134)">
-<path d="M387 149H494V256H387V149Z" fill="#92919A"/>
+<path id = "middle-square" d="M387 149H494V256H387V149Z" fill="#92919A"/>
 </g>
 <defs>
 <filter id="filter0_d_21_134" x="468" y="368" width="23" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

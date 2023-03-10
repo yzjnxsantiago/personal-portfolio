@@ -6,6 +6,17 @@
  Date:			March 7, 2023
  */
 
+ function append_code(el, height){
+
+    for (let i = 0; i < height; i++){
+
+        el.innerHTML += "<div>" + Math.round(Math.random()) + "</div>"
+    }
+
+ }
+
+ 
+
  $(document).ready(function(){
 
     const observer = new IntersectionObserver((entries) => {
@@ -33,7 +44,9 @@
     let PCB = document.getElementById("PCB");
     let navbar = document.getElementById("nav");
     let home_container = document.getElementById("home");
-
+    let code_bg_0 = document.getElementById("tl-code-bg-c0");
+    let code_bg_1 = document.getElementById("tl-code-bg-c1"); 
+    let code_bg_2 = document.getElementById("tl-code-bg-c2");
     
 
     $("#button").click(function() { 
@@ -49,8 +62,14 @@
 
        
             PCB.remove();
+
+            append_code(code_bg_0, 12)
+            append_code(code_bg_1, 8)
+            append_code(code_bg_2, 4)
             
             home_container.style.display = "";
+
+            
 
             $("#nav").fadeIn();
             
