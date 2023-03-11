@@ -1,4 +1,5 @@
 {% block content %}
+{% load static %}
 <nav id = "nav" class="navbar navbar-expand-lg navbar-dark" style="--bs-scroll-height: 100px; display: none; background-color: rgb(5, 3, 17); height: 100px;">
     <div class="container">
         <a class="navbar-brand" href="#">About Me</a>
@@ -7,12 +8,15 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.25rem;">
                 Projects
                 </a>
-                <ul class="dropdown-menu dark" style="position: absolute; left: 788; top: 15;">
+                <ul class="dropdown-menu dark" style="background-color: rgb(32, 8, 8); color: white;">
                 <li><a class="dropdown-item" href="#">Software</a></li>
                 <li><a class="dropdown-item" href="#">Hardware</a></li>
                 <li><a class="dropdown-item" href="#">Other</a></li>
                 </ul>
             </li>
+        </div>
+        <div>
+            <img id = "MCU" src="{% static 'portfolio/MCU.svg' %}" draggable="false">
         </div>
   
     </div>   

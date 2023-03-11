@@ -204,3 +204,30 @@ li {
     --bs-card-bg: #35354f !important;
 
 }
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+  }
+
+  .triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #555;
+	border-bottom: 25px solid transparent;
+}
+
+.h-line {
+    height: 1px;
+    width: 50px;
+    background-color: #555;
+  }
+
+.v-line {
+    height: 50px;
+    width: 2px;
+    background-color: #555;
+  }

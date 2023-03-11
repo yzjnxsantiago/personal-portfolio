@@ -10,11 +10,10 @@
 
     for (let i = 0; i < height; i++){
 
-        el.innerHTML += "<div>" + Math.round(Math.random()) + "</div>"
+        el.innerHTML += "<div style='font-size: 22px;'>" + Math.round(Math.random()) + "</div>"
     }
 
  }
-
  
 
  $(document).ready(function(){
@@ -22,9 +21,7 @@
     const observer = new IntersectionObserver((entries) => {
         
         entries.forEach((entry) => {
-
-            console.log(entry);
-
+            
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
             } else {
@@ -41,63 +38,38 @@
 
     let open_container = document.getElementById("non-important-open");
     let micro_controller = document.getElementById("MCU");
-    let PCB = document.getElementById("PCB");
-    let navbar = document.getElementById("nav");
-    let home_container = document.getElementById("home");
-    let code_bg_0 = document.getElementById("tl-code-bg-c0");
-    let code_bg_1 = document.getElementById("tl-code-bg-c1"); 
-    let code_bg_2 = document.getElementById("tl-code-bg-c2");
-    
+    let code_bg_0  = document.getElementById("tl-code-bg-c0");
+    let code_bg_1  = document.getElementById("tl-code-bg-c1"); 
+    let code_bg_2  = document.getElementById("tl-code-bg-c2");
+    let right_line = document.getElementById("rightline");
+    let left_line  = document.getElementById("leftline");
 
-    $("#button").click(function() { 
+    addEventListener("scroll", (event) => {
 
-        PCB.style.position = "absolute";
-        PCB.style.bottom = "496px";
+        if (document.body.scrollTop > 450) {
 
-        $(".fly-away").animate({
-
-            top: '-450px',
-            
-        }, 1000, function() {
-
-       
-            PCB.remove();
-
-            append_code(code_bg_0, 12)
-            append_code(code_bg_1, 8)
-            append_code(code_bg_2, 4)
-            
-            home_container.style.display = "";
-
-            
-
-            $("#nav").fadeIn();
-            
-            
-
-        });
-
-        open_container.remove();
-
-        micro_controller.style.position = "absolute";
-        micro_controller.style.bottom = "88px";
+            right_line.style.backgroundColor = "green";
+            left_line.style.backgroundColor = "#555";
         
-        $("#MCU").animate({
+        } else {
 
-            top: '-53px',
-            height: '210px',
-            width: '210px',
-            left: '850px'
-            
-        }, 1000, )
-        
-        
-        
+            right_line.style.backgroundColor = "#555";
+            left_line.style.backgroundColor = "green";
+        }
 
+    });
 
-    })
+    append_code(code_bg_0, 16)
+    append_code(code_bg_1, 12)
+    append_code(code_bg_2, 8)
+
+    $("#nav").fadeIn();
+
+    micro_controller.style.position = "relative";
+    micro_controller.style.left = "-200px";
+    micro_controller.style.scale = "23%";
+        
+});
 
    
 
-
-})

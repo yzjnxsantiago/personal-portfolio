@@ -18,8 +18,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-        <script src="{% static 'portfolio/js/turnpot.js' %}"></script>
-        <script src="{% static 'portfolio/js/bigredbutton.js' %}"></script>
         <script src="{% static 'portfolio/js/open-home-transition.js' %}"></script>  
         
     </head>
@@ -29,9 +27,9 @@
         {% endblock %}
 
         <div id="home-opening" class="containerx">
-            <div id="home" class="containerx" style="display: none;">
-                <div style="margin-top: 100px;"><img src="{% static 'portfolio/PCB.svg' %}" draggable="false"></div>
-                <div id = "tl-code-bg-c0">
+            <div id="home" class="containerx">
+                <div style="margin-top: 100px;"><img src="{% static 'portfolio/PCB.svg' %}" draggable="false" style="scale: 90%;"></div>
+                <div id = "tl-code-bg-c0" class="">
                 </div>
                 <div id = "tl-code-bg-c1">
                 </div>
@@ -49,6 +47,26 @@
                     <h2>Is a leaf's purpose only to fall?    </h2>
                 </section>
 
+                <div class="triangle-left"></div>
+                <div class="circle" style="scale: 30%;
+                position: relative;
+                left: -2%;
+                top: -50px;"></div>
+                <div class="line" style="position: relative;
+                top: -76px;
+                right: -385px;
+                height: 2px; width: 725px;"></div>
+                <div id = "rightline" class="h-line" style="position: relative;
+                top: -79px;
+                right: -385px;
+                height: 2px; width: 725px;
+                z-index: -1;"></div>
+                <div id = "leftline" class="h-line" style="position: relative;
+                top: -80px;
+                right: 385px;
+                height: 2px; width: 725px;
+                z-index: -1;
+                background-color: green;"></div>
                 <section class="hidden">
                     <h1>Projects</h1>
                     <div class="logos" style="margin-top: 50px;">
@@ -72,19 +90,6 @@
                                 </div>
                               </div>
                         </div>  
-                </section>
-            </div>
-            <img id = "PCB" class = "fly-away" src="{% static 'portfolio/PCB.svg' %}" draggable="false">
-            <img id = "MCU" src="{% static 'portfolio/MCU.svg' %}" draggable="false">
-            <div id = "non-important-open" class="fly-away">
-                <div id = "top-right-trace"><img src="{% static 'portfolio/BackgroundTrace.svg' %}" draggable="false"></div>
-                <div id = "led-home"><img src="{% static 'portfolio/BackgroundTrace.svg' %}" draggable="false"></div>
-                <div id = "button">
-                    <img id = "button-off" src="{% static 'portfolio/ButtonOFF.svg' %}" draggable="false">
-                    <h1 id ="no-push-txt" style="font-family: 'Roboto', sans-serif; color: white;">Do Not Push</h1>
-                </div>
-            </div>
-        </div>
-    
+                </section>    
     </body>
 </html>
