@@ -29,13 +29,13 @@
         {% endblock %}
 
         <div class="container text-center">
-            <h1 style="margin-top: 100px; font-size: 50px;">&lt;/&gt;</h1>
-            <h1>Software Projects</h1>
-            <div class="row">
+            <img src ="{% static 'portfolio/andgate.svg' %}" style="scale: 60%; margin-top: 100px;">
+            <h1>Hardware Projects</h1>
+            <div class="row" style="margin-left: 24x;">
                 {% for project in projects %}
-                    {% if project.project_type == 'software' %}
-                        <div class="column">
-                            <div class="card dark" style="width: 16rem; margin-left: 50px; margin-top: 200px;">
+                    {% if project.project_type == 'hardware' %}
+                        <div class="col">
+                            <div class="card dark" style="width: 16rem; margin-left: 64px; margin-top: 200px;">
                                 <img src="" class="card-img-top" alt="...">
                                 <div class="card-body">
                                 <h5 class="card-title">{{project.project_name}}</h5>
@@ -46,6 +46,7 @@
                         </div>
                     {% endif %}
                 {% endfor %}
+
             </div>
         </div>
         
