@@ -231,3 +231,9 @@ li {
     width: 2px;
     background-color: #555;
   }
+
+.project-img {
+    width: 100%;
+    height: 8vw;
+    object-fit: cover;
+}

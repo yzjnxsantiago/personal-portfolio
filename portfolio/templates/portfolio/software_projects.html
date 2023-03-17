@@ -34,13 +34,13 @@
             <div class="row">
                 {% for project in projects %}
                     {% if project.project_type == 'software' %}
-                        <div class="column">
-                            <div class="card dark" style="width: 16rem; margin-left: 50px; margin-top: 200px;">
-                                <img src="" class="card-img-top" alt="...">
+                        <div class="col">
+                            <div class="card dark" style="width: 16rem; margin-left: 81px; margin-top: 125px;">
+                                <img src="{{project.project_image.url}}" class="card-img-top project-img" alt="...">
                                 <div class="card-body">
                                 <h5 class="card-title">{{project.project_name}}</h5>
-                                <p class="card-text">Hello World</p>
-                                <a href="/hardware-projects" class="btn btn-primary">Learn more!</a>
+                                <p class="card-text">{{project.project_description}}</p>
+                                <a href="{{project.url}}" class="btn btn-primary">Learn more!</a>
                                 </div>
                             </div>
                         </div>
